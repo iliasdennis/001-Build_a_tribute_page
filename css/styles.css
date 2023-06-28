@@ -1,4 +1,4 @@
-html {
+	html {
   /* Setting a base font size of 10px give us easier rem calculations
        Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
      */
@@ -28,6 +28,10 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 3.25rem;
+}
+
 a {
   color: #477ca7;
 }
@@ -49,53 +53,11 @@ a:visited {
   }
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-#tribute-link {
-  color: #CC0000;
-  font-weight: bold;
-}
-
-#image {
+img {
   max-width: 100%;
   display: block;
-}
-
-#img-caption {
-  font-size: 30px;
+  height: auto;
+  margin: 0 auto;
 }
 
 #img-div {
@@ -104,11 +66,30 @@ a:visited {
   margin: 0;
 }
 
-.center {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
+#img-caption {
+  margin: 15px 0 5px 0;
+}
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+
+#headline {
+  margin: 50px 0;
   text-align: center;
+}
+
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+li {
+  margin: 16px 0;
 }
 
 blockquote {
